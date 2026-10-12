@@ -1,0 +1,17 @@
+PURA VITTA - Landing page
+
+Archivos
+- index.html : estructura y textos (abrelo en el navegador, doble clic).
+- styles.css : colores (variables al inicio, en :root), tipografias y animaciones.
+- script.js  : animaciones de scroll y simulador de pedido.
+- videos/    : pon aqui tus videos de reposteria (mp4).
+- imagenes/  : pon aqui tus fotos.
+
+Cambios comunes
+- Precio y descuentos: en script.js, busca 32000 y los valores 5 y 10.
+- Envio: en index.html, busca id="zona" (precios de las opciones).
+- Correo y telefono: en index.html, seccion id="contacto".
+- Videos: en index.html, seccion id="reposteria", quita los signos de comentario
+  <!-- --> alrededor de la etiqueta <video> y ajusta el nombre del archivo.
+- El formulario de contacto es una simulacion. Para recibir mensajes reales
+  conectalo a un servicio como Formspree o a tu correo.
