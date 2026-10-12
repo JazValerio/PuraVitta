@@ -40,7 +40,7 @@ nav ul a{text-decoration:none;font-size:.9rem;opacity:.85}nav ul a:hover{opacity
 .stats{display:flex;gap:34px;margin-top:30px;flex-wrap:wrap}
 .stats b{display:block;font:italic 400 3rem/1 'Noto Serif',serif;color:var(--wine)}
 .stats small{font-size:.85rem;opacity:.8}
-.blk{width:min(100%,380px);margin:auto;filter:drop-shadow(0 30px 24px rgba(74,7,22,.28));animation:fl 6s ease-in-out infinite}
+.blk{display:block;width:min(100%,380px);margin:auto;border-radius:18px;filter:drop-shadow(0 30px 24px rgba(74,7,22,.28));animation:fl 6s ease-in-out infinite}
 @keyframes fl{50%{transform:translateY(-14px)}}
 .ft{list-style:none;padding:0;margin:22px 0 30px}
 .ft li{padding:12px 0;border-bottom:1px solid rgba(156,197,214,.35)}
@@ -62,6 +62,8 @@ nav ul a{text-decoration:none;font-size:.9rem;opacity:.85}nav ul a:hover{opacity
 .sim{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;margin-top:40px}
 .pn{background:var(--ice);border-radius:30px;padding:clamp(24px,4vw,42px);color:var(--ink)}
 label{display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin:20px 0 8px;color:var(--wine);font-weight:500}
+.shipping-note{font-size:.85rem;margin-top:10px;opacity:.75}
+.shipping-note[hidden]{display:none}
 select,input,textarea{width:100%;font:inherit;padding:14px 16px;border:1.5px solid var(--sky);border-radius:14px;background:#fff;color:var(--ink)}
 select:focus,input:focus,textarea:focus,.btn:focus-visible,a:focus-visible,.q button:focus-visible{outline:3px solid var(--wine);outline-offset:2px}
 .q{display:flex;align-items:center;gap:14px}

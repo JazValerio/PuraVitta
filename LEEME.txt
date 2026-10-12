@@ -1,4 +1,4 @@
-PURA VITTA - Landing page
+PURA VITA - Landing page
 
 Archivos
 - index.html : estructura y textos (abrelo en el navegador, doble clic).
