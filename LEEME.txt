@@ -8,8 +8,8 @@ Archivos
 - imagenes/  : pon aqui tus fotos.
 
 Cambios comunes
-- Precio y descuentos: en script.js, busca 32000 y los valores 5 y 10.
-- Envio: en index.html, busca id="zona" (precios de las opciones).
+- Precio: en script.js, busca el valor 13.5 (USD por bloque).
+- Envio: en index.html, busca id="zona" (precios en USD) y el selector id="destino".
 - Correo y telefono: en index.html, seccion id="contacto".
 - Videos: en index.html, seccion id="reposteria", quita los signos de comentario
   <!-- --> alrededor de la etiqueta <video> y ajusta el nombre del archivo.
