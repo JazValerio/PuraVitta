@@ -48,14 +48,14 @@
 <section class="sec mist" id="nosotros"><div class="wrap g2">
 <div class="rv"><h2 class="s">Del “pura vida” al cacao tico</h2>
 <p>Pura Vita nace de dos cosas que nos definen: la actitud pura vida de Costa Rica y el cacao que crece en nuestra tierra. Hacemos cobertura de chocolate para quienes viven de la repostería: panaderías, pastelerías, chocolateros y cafés.</p>
-<p style="margin-top:14px">Nuestra cobertura tiene 90% de cacao y viene en bloques de 2 kg, lista para fundir, templar y cubrir con brillo. Sin complicaciones, con sabor intenso y honesto.</p>
-<div class="stats"><div><b data-n="90">0</b><small>% de cacao</small></div><div><b data-n="2">0</b><small>kg por bloque</small></div><div><b data-n="100">0</b><small>% tico</small></div></div></div>
+<p style="margin-top:14px">Nuestra cobertura viene en tres porcentajes de cacao: 70%, 65% y 50%. Cada una se ofrece en bloques de 2 kg, lista para fundir, templar y cubrir con brillo.</p>
+<div class="stats"><div class="cacao-percentages"><b>70%</b><b>65%</b><b>50%</b><small>porcentajes de cacao</small></div><div><b data-n="2">0</b><small>kg por bloque</small></div><div><b data-n="100">0</b><small>% tico</small></div></div></div>
 <div class="rv" style="--d:.15s"><svg viewBox="0 0 200 200" style="width:min(100%,360px);display:block;margin:auto" aria-hidden="true"><use href="#logo"/></svg></div>
 </div></section>
 
 <section class="sec dk" id="producto"><div class="wrap g2">
 <div class="rv"><img class="blk" src="imagenes/Box.png" alt="Empaque 3D de cobertura de chocolate Pura Vita, 2 kg"></div>
-<div class="rv" style="--d:.15s"><h2 class="s">Cobertura 90% cacao, en bloque de 2 kg</h2>
+<div class="rv" style="--d:.15s"><h2 class="s">Coberturas 70%, 65% y 50% cacao, en bloques de 2 kg</h2>
 <ul class="ft"><li>Sabor profundo y poco dulce, perfecto para balancear rellenos.</li><li>Se funde parejo y deja un brillo limpio al templarse.</li><li>Bloque de 2 kg: cómodo de almacenar y de porcionar.</li><li>Cacao de Costa Rica, pensado para repostería profesional.</li></ul>
 <a class="btn" href="#pedido">Calcular mi pedido</a></div>
 </div></section>
@@ -83,6 +83,8 @@
 <div class="pn rv">
 <label for="destino">Destino de envío</label>
 <select id="destino"><option value="cr">Costa Rica</option><option value="internacional">Envíos internacionales</option></select>
+<label for="porcentaje">Porcentaje de cacao</label>
+<select id="porcentaje"><option value="70">70% cacao</option><option value="65">65% cacao</option><option value="50">50% cacao</option></select>
 <div id="zona-cr-wrap">
 <label for="zona">Zona dentro de Costa Rica</label>
 <select id="zona"><option value="2.5">Gran Área Metropolitana</option><option value="5.5">Resto del país</option></select>
@@ -97,6 +99,7 @@
 </div>
 <div class="tk rv" style="--d:.15s" aria-live="polite">
 <h3 class="s" style="font-size:1.6rem;margin-bottom:10px">Resumen</h3>
+<div class="r"><span>Porcentaje de cacao</span><span id="porcentaje-resumen"></span></div>
 <div class="r"><span>Subtotal</span><span id="sb"></span></div>
 <div class="r"><span>Envío</span><span id="en"></span></div>
 <div class="r"><span>IVA 13%</span><span id="iv"></span></div>

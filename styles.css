@@ -40,6 +40,9 @@ nav ul a{text-decoration:none;font-size:.9rem;opacity:.85}nav ul a:hover{opacity
 .stats{display:flex;gap:34px;margin-top:30px;flex-wrap:wrap}
 .stats b{display:block;font:italic 400 3rem/1 'Noto Serif',serif;color:var(--wine)}
 .stats small{font-size:.85rem;opacity:.8}
+.stats .cacao-percentages{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.stats .cacao-percentages b{font-size:2.4rem}
+.stats .cacao-percentages small{flex-basis:100%}
 .blk{display:block;width:min(100%,380px);margin:auto;border-radius:18px;filter:drop-shadow(0 30px 24px rgba(74,7,22,.28));animation:fl 6s ease-in-out infinite}
 @keyframes fl{50%{transform:translateY(-14px)}}
 .ft{list-style:none;padding:0;margin:22px 0 30px}

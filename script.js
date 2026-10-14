@@ -7,10 +7,10 @@ addEventListener('scroll',()=>{if(tk)return;tk=1;requestAnimationFrame(()=>{cons
 $('bar').style.width=(y/h*100)+'%';pods.forEach(p=>p.style.setProperty('--ty',y*p.dataset.p+'px'));
 document.querySelectorAll('.petals').forEach(p=>p.style.transform='rotate('+y*.08+'deg)');tk=0})},{passive:true});
 let q=3;
-function calc(){const sb=q*13.5,international=$('destino').value==='internacional',env=international?null:+$('zona').value,iv=(sb+(env||0))*.13;
-$('qt').textContent=q;$('kg').textContent=q*2+' kg de cobertura';$('sb').textContent=fmt(sb);
+function calc(){const sb=q*13.5,percentage=$('porcentaje').value,international=$('destino').value==='internacional',env=international?null:+$('zona').value,iv=(sb+(env||0))*.13;
+$('qt').textContent=q;$('kg').textContent=q*2+' kg de cobertura';$('porcentaje-resumen').textContent=percentage+'%';$('sb').textContent=fmt(sb);
 $('en').textContent=international?'Por cotizar':fmt(env);$('iv').textContent=fmt(iv);$('tt').textContent=fmt(sb+(env||0)+iv)+(international?' + envío por cotizar':'');$('zona-cr-wrap').hidden=international;$('envio-internacional').hidden=!international;$('envio-cr').hidden=international;$('ok').classList.remove('on')}
-$('mn').onclick=()=>{q=Math.max(1,q-1);calc()};$('pl').onclick=()=>{q=Math.min(50,q+1);calc()};$('zona').onchange=calc;$('destino').onchange=calc;
-$('go').onclick=()=>{const o=$('ok'),international=$('destino').value==='internacional',message='Quiero cotizar '+q+' bloques de 2 kg'+(international?' con envío internacional.':'.');o.innerHTML='<b class="s">¡Pedido simulado!</b><br>N.º PV-'+(1000+Math.floor(Math.random()*9000))+' · '+q+' bloque'+(q>1?'s':'')+' · '+$('tt').textContent+'.<br>No se hizo ningún cobro. <a id="cotizar" href="#contacto">Contáctanos para cerrarlo</a>.';$('cotizar').onclick=()=>{$('ms').value=message};o.classList.add('on')};
+$('mn').onclick=()=>{q=Math.max(1,q-1);calc()};$('pl').onclick=()=>{q=Math.min(50,q+1);calc()};$('zona').onchange=calc;$('destino').onchange=calc;$('porcentaje').onchange=calc;
+$('go').onclick=()=>{const o=$('ok'),international=$('destino').value==='internacional',percentage=$('porcentaje').value,message='Quiero cotizar '+q+' bloques de 2 kg de cobertura '+percentage+'% cacao'+(international?' con envío internacional.':'.');o.innerHTML='<b class="s">¡Pedido simulado!</b><br>N.º PV-'+(1000+Math.floor(Math.random()*9000))+' · '+q+' bloque'+(q>1?'s':'')+' de cobertura '+percentage+'% cacao · '+$('tt').textContent+'.<br>No se hizo ningún cobro. <a id="cotizar" href="#contacto">Contáctanos para cerrarlo</a>.';$('cotizar').onclick=()=>{$('ms').value=message};o.classList.add('on')};
 $('fm').onsubmit=e=>{e.preventDefault();const o=$('fok');o.innerHTML='<b class="s">¡Gracias, '+$('nm').value+'!</b><br>Recibimos tu mensaje. Te escribiremos pronto.';o.classList.add('on');e.target.reset()};
 calc();
